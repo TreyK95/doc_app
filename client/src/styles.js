@@ -7,6 +7,8 @@ export const FONT_SIZES = { SMALL: '.5em', MEDIUM: "1em", LARGE:'1.5'};
 export const BORDER_RADIUS = '3px';
 export const INV_PRIMARY_COLOR = 'white';
 export const PADDING = '.25em 1em';
+export const PADDING_EVEN = '.5em';
+export const PADDING2_EVEN_LARGE = '1em';
 export const MARGIN = '1em';
 export const SHADOW = '2px 2px 7px 1px #ddd'
 

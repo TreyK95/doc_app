@@ -29,10 +29,10 @@ function RegisterFormDemo() {
       <h1>Register</h1>
       <FormLabel>UserName</FormLabel>
       <input name="userName" defaultValue="test" ref={register} />
-      <FormLabel>PassPhrase</FormLabel>
-      {errors.passphrase && (
-        <FormattedMessage noBackground type='red'>{getPassPhraseError()}</FormattedMessage>
-      )}
+      <FormLabel>PassPhrase {errors.passphrase && (
+        <FormattedMessage noBackground type='alert'>*{getPassPhraseError()}</FormattedMessage>
+      )}</FormLabel>
+      
       <input
         name="passphrase"
         ref={register({

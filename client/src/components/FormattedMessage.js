@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { ALERT_BACKGROUND, ALERT_TEXT_COLOR, BORDER_RADIUS, NOTIFY_BACKGROUND, NOTIFY_TEXT_COLOR, PADDING, WARN_BACKGROUND, WARN_TEXT_COLOR } from '../styles'
+import { ALERT_BACKGROUND, ALERT_TEXT_COLOR, BORDER_RADIUS, NOTIFY_BACKGROUND, NOTIFY_TEXT_COLOR, PADDING, PADDING2_EVEN_LARGE, WARN_BACKGROUND, WARN_TEXT_COLOR } from '../styles'
 
 // <FormatedMessage type='alert'
 const getTextColor = (props) =>{
@@ -27,7 +27,7 @@ const FormattedMessage = styled.div`
     border: 2px solid ${(props) => !props.noBackground ? getTextColor(props) : 'white'};
     background: ${(props) => !props.noBackground ? getBackgroundColor(props) : 'white'};
     border-radius: ${BORDER_RADIUS};
-    padding: ${ (props) => !props.noBackground ? PADDING: '0px'}
+    padding: ${ (props) => !props.noBackground ? PADDING2_EVEN_LARGE: '0px'}
 `
 
 export default FormattedMessage
