@@ -31,8 +31,7 @@ two ways do this
   - `git remote add origin sshlink`
 
 
-# Doing work day 1
-# Doing work day 2 still in progress but semi functional
+# DONE
 
 
 

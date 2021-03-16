@@ -9,8 +9,6 @@ import About from './pages/About';
 function App() {
   return (
     <>
-    <h1>Day work here done!!</h1>
-    <p>day 2 work in progress</p>
     <NavBar />
     <Container>
       <Switch>
