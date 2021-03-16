@@ -32,6 +32,7 @@ two ways do this
 
 
 # Doing work day 1
+# Doing work day 2 still in progress but semi functional
 
 
 
