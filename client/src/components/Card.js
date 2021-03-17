@@ -6,7 +6,7 @@ import Fade from './Fade'
 
 const Card = (props) => {
     const {header, children} = props
-    const [hideBody, setHideBody] = useState(true)
+    const [hideBody, setHideBody] = useState(false)
     return (
         <CardContainer>
            <header style={{marginBottom: MEDIUM_SPACING, display:'flex', justifyContent:'space-between'}}>
