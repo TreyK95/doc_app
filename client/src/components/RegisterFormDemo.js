@@ -24,6 +24,8 @@ function RegisterFormDemo() {
   };
   console.log(watch("example")); // you can watch individual input by pass the name of the input
   console.log(errors);
+  
+
   return (
     <Form onSubmit={handleSubmit(onSubmit)}>
       <h1>Register</h1>
@@ -41,6 +43,7 @@ function RegisterFormDemo() {
             val.split(" ").filter((word) => word.length >= 3).length >= 4
         })}
       />
+      <input minLength='5'/>
 
       <Button>Register</Button>
     </Form>

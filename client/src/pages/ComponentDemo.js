@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../components/Button'
+import Card from '../components/Card'
 import CardContainer from '../components/CardContainer'
 import FormattedMessage from '../components/FormattedMessage'
 import RegisterFormDemo from '../components/RegisterFormDemo'
@@ -8,9 +9,11 @@ const ComponentDemo = ()=>{
     return(
         <>
           <h1>My components</h1>
-          <Button primary>Primary button</Button>
-          <Button >Inverted Button</Button>
-          <CardContainer>
+          <Card header='Buttons'>
+            <Button primary>Primary button</Button>
+            <Button >Inverted Button</Button>
+          </Card>
+          <Card header='Formatted Messages'>
               <FormattedMessage type='alert'>
                   Alert message
               </FormattedMessage>
@@ -20,20 +23,11 @@ const ComponentDemo = ()=>{
               <FormattedMessage>
                   Notify message
               </FormattedMessage>
-          </CardContainer>
-          <CardContainer>
+          </Card>
+          <Card header='Form Demo'>
             <RegisterFormDemo />
-         </CardContainer>
-          <CardContainer>
-              <h1>yo</h1>
-              <p>asdhjfka dkfj alksdj flkaj sdlfkj a lk df</p>
-              <p>asdhjfka dkfj alksdj flkaj sdlfkj a lk df</p>
-          </CardContainer>
-          <CardContainer>
-              <h1>yo</h1>
-              <p>asdhjfka dkfj alksdj flkaj sdlfkj a lk df</p>
-              <p>asdhjfka dkfj alksdj flkaj sdlfkj a lk df</p>
-          </CardContainer>
+         </Card>
+
 
 
          </>
