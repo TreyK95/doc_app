@@ -16,8 +16,8 @@ const Appointments = (props) => {
             <Link to={`appointments/${appointment.id}`}>
               <CardContainer>
                 <p>Appointment Date: {appointment.appointment_date}</p>
-                {/* <p>Physician Name: {appointment.physician.id}</p>
-                <p>{appointment.patient_id}</p> */}
+                <p>Physician ID: {appointment.physician_id}</p>
+                <p>Patient ID: {appointment.patient_id}</p>
               </CardContainer>
             </Link>
           )
