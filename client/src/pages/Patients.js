@@ -12,11 +12,11 @@ const Patients = (props) => {
         <AxiosContainer fullError loading={loading} error={error} loaderMessage={'Loading URL, please wait'}>
             <List name='Patients'
                 data={data}
-                renderData={(user)=> { 
+                renderData={(patient)=> { 
                     return(
-                        <Link to={`/users/${user.id}`}>
+                        <Link to={`/patients/${patient.id}`}>
                           <CardContainer>
-                              <p>{user.name}</p>
+                              <p>{patient.name}</p>
                           </CardContainer>
                         </Link>
                     )} 
