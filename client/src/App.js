@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
@@ -18,7 +17,7 @@ function App() {
   return (
     <>
     <NavBar />
-    <h1 style={{color: PRIMARY_COLOR }}>sdf</h1>
+    <h1 style={{color: PRIMARY_COLOR }}>Hospital</h1>
     <Container>
       <Switch>
         <Route exact path='/' component={Home} />
