@@ -1,5 +1,5 @@
 class Api::PhysiciansController < ApplicationController
-  before_action :set_physician, only [:show, :destroy]
+  before_action :set_physician, only: [:show, :destroy]
 
   def index
     physicians = Physician.all
@@ -17,6 +17,7 @@ class Api::PhysiciansController < ApplicationController
       render json: @physician
     else
       render json: {error: @physician.errors}, status: 422
+    end
   end
 
   def destroy
