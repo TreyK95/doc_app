@@ -24,7 +24,6 @@ const Appointments = (props) => {
                 <p>Appointment ID: {appointment.id}</p>
                 <p>Physician ID: {appointment.physician_id}</p>
                 <p>Patient ID: {appointment.patient_id}</p>
-
               </CardContainer>
             </Link>
           )

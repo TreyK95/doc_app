@@ -11,8 +11,8 @@ class Api::AppointmentsController < ApplicationController
   end
 
   def create
-    appointment = Appointment.new(appointment_params)
-    if(appointment.save)
+    @appointment = Appointment.new(appointment_params)
+    if(@appointment.save)
       render json: appointment
     else
       render json: {error: @appointment.errors}, status: 422
@@ -36,3 +36,4 @@ class Api::AppointmentsController < ApplicationController
 
 
 end
+
