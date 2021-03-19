@@ -7,6 +7,11 @@ import useAxiosOnMount from "../hooks/useAxiosOnMount"
 const Appointments = (props) => {
   const {data, loading, error} = useAxiosOnMount('/api/appointments')
 
+
+  // const handleSubmit
+
+
+
   return (
     <AxiosContainer fullError loading={loading} error={error} loaderMessage={'Loading URL, please wait'}>
       <List name='Appointments'
@@ -16,8 +21,10 @@ const Appointments = (props) => {
             <Link to={`appointments/${appointment.id}`}>
               <CardContainer>
                 <p>Appointment Date: {appointment.appointment_date}</p>
+                <p>Appointment ID: {appointment.id}</p>
                 <p>Physician ID: {appointment.physician_id}</p>
                 <p>Patient ID: {appointment.patient_id}</p>
+
               </CardContainer>
             </Link>
           )
