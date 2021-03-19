@@ -12,6 +12,7 @@ const useAxiosOnMount = (url) => {
    const getData = async()=>{
        try{
          let res = await axios.get(url)
+         console.log(res.data)
          // if res comes back as something other than res.data or res.data.data
          // this will break not 100%
          setData(res.data.data ? res.data.data : res.data)
@@ -22,6 +23,7 @@ const useAxiosOnMount = (url) => {
        }
    }
    return { data: data, loading: loading, error:error}
+   
 }
 
 export default useAxiosOnMount
