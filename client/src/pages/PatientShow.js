@@ -3,6 +3,7 @@ import AxiosContainer from '../components/AxiosContainer'
 import {useParams} from 'react-router-dom'
 import AppointmentNew from './AppointmentNew'
 import Card from '../components/Card'
+import StringifyJson from '../components/StringifyJson'
 
 
 const PatientShow = (props)=>{
