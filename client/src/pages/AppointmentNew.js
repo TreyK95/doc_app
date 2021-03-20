@@ -26,10 +26,11 @@ const AppointmentNew =(props) => {
 
   const handleSubmit = async() => {
     try {
-      debugger
+      // debugger
+      console.log('test1')
       let res = await axios.post(`/api/appointments`, {patient_id: id, physician_id: physicianID, appointment_date: appointment})
       //refresh page here
-
+        console.log('test2')
     } catch(err){
       alert(err)
     }
