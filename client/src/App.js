@@ -11,6 +11,7 @@ import PatientShow from './pages/PatientShow';
 import Physicians from './pages/Physicians';
 import PhysicianShow from './pages/PhysicianShow';
 import Appointments from './pages/Appointments';
+import NewPhysicianForm from './pages/NewPhysicianForm';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
         <Route exact path='/patients/:id' component={PatientShow} />
         <Route exact path='/physicians' component={Physicians} />
         <Route exact path='/physicians/:id' component={PhysicianShow} />
+        {/* <Route exact path='/physicians/:id/new' component={NewPhysicianForm}/> */}
         <Route exact path='/appointments' component={Appointments} />
       </Switch>
       </Container>

@@ -11,7 +11,7 @@ const Card = (props) => {
         <CardContainer>
            <header style={{marginBottom: MEDIUM_SPACING, display:'flex', justifyContent:'space-between'}}>
                <h3>{header}</h3>
-               <p onClick={()=> {setHideBody(!hideBody)}}>{hideBody ? 'show ICON': 'hide ICON'}</p>
+               <p onClick={()=> {setHideBody(!hideBody)}}>{hideBody ? 'SHOW': 'HIDE'}</p>
            </header>
            {/* this is where my button/ nested content */}
            <Fade hide={hideBody}>
